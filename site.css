@@ -73,9 +73,26 @@ code { font-family: var(--mono); font-size: .9em; overflow-wrap: anywhere; }
 .document h1 { font-size: clamp(38px, 5vw, 54px); }
 .document h2 { margin-top: 42px; font-size: 27px; letter-spacing: -.02em; }
 .document h3 { margin-top: 26px; font-size: 20px; }
+.document h4 { margin: 24px 0 0; font-size: 17px; color: var(--ink); }
 .document p { color: var(--muted); overflow-wrap: anywhere; }
 .document strong { color: var(--ink); }
 .document-date { font-size: 14px; }
+.policy-contents { margin-block: 24px 36px; padding-block: 12px; border-block: 1px solid var(--line); }
+.policy-contents a { text-decoration: underline; }
+.organization { --accent: #ffa087; --focus: #ffb29d; background: radial-gradient(ellipse at 92% 0%, #44201955, transparent 40rem), var(--page); }
+.org-intro { padding-block: 80px 72px; }
+.org-intro .lead { max-width: 43rem; }
+.section-heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px 24px; margin-bottom: 24px; }
+.section-heading > span, .projects-note { color: var(--muted); font-size: 14px; }
+.project-card { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 40px; padding: 36px; border: 1px solid var(--line); border-radius: 20px; background: linear-gradient(145deg, #1b1a21, #121218); box-shadow: inset 0 1px #ffffff14; }
+.project-identity { display: flex; align-items: center; gap: 16px; }
+.project-identity .eyebrow { margin: 0 0 5px; color: var(--muted); font-size: 13px; }
+.project-identity h3 { font-size: 30px; }
+.project-copy > p:not(.release-note) { color: var(--muted); margin-block: 24px; }
+.project-card .primary { gap: 10px; }
+.project-detail { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 12px; padding: 28px 16px; border-radius: 12px; color: var(--muted); background: #0d0d12; text-align: center; font-size: 14px; }
+.project-detail strong { color: var(--ink); font-size: 22px; }
+.projects-note { margin-top: 20px; }
 @media (max-width: 800px) {
   .container { width: calc(100% - 36px); }
   .hero, .cloud-layout, .support { grid-template-columns: minmax(0, 1fr); gap: 32px; }
@@ -94,6 +111,11 @@ code { font-family: var(--mono); font-size: .9em; overflow-wrap: anywhere; }
   .button { width: 100%; }
   .path-art { padding: 20px; }
   .lead { font-size: 17px; }
+}
+@media (max-width: 800px) {
+  .org-intro { padding-block: 44px; }
+  .project-card { grid-template-columns: minmax(0, 1fr); gap: 24px; padding: 24px; }
+  .project-detail { padding: 24px 16px; }
 }
 @media (prefers-reduced-motion: no-preference) {
   a { transition: color 140ms ease, background-color 140ms ease, box-shadow 140ms ease; }

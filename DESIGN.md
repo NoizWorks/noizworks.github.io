@@ -1,11 +1,11 @@
-# MediaLatch website
+# NoizWorks website design
 
-Purpose: explain the browser extension, link to its verified distribution channels and give a readable account of optional Google Drive and Yandex Disk data access. This site does not implement OAuth or receive credentials.
+The root page presents NoizWorks as an independent multi-project organization. MediaLatch has its own page at `/medialatch/`, with its recognizable icon, concrete workflow and an explicit distinction between release 3.0.7 and development features. Do not invent additional projects or availability dates.
 
-Preserve the supplied MediaLatch logo and the product's graphite/raspberry palette. Color and font values live in the root tokens in `styles.css`. Use the local system font stack, a 1160px maximum content width, clear left-aligned typography and compact navigation. The example file path illustrates a real product feature and must remain labelled as an example.
+Use the generated NW mark for organization identity and the existing MediaLatch mark only for the product. Use the shared `site.css`: a dark background, restrained warm accents, native system fonts, readable line lengths and visible keyboard focus. No framework or build step is required.
 
-The homepage's first screen contains the product, one concise description and a Chrome Web Store action. Product facts take priority over decoration. No invented user counts, testimonials, performance promises or implied platform endorsement. Cloud availability must describe the installed/released version truthfully.
+Use semantic landmarks, one h1 per page, a skip link and descriptive links. Layout must reflow at 320px without hiding content. Keep local artwork dimensions explicit to reserve its space. Decorative SVGs have empty alt text.
 
-Keep content visible with JavaScript disabled. No scripts, analytics, remote fonts or build dependencies are required. Hover feedback is short; keyboard focus is immediate. Reduced-motion preferences disable transitions. Verify narrow layouts and keyboard navigation when changing styles.
+The shared `/privacy.html` keeps a stable address. It separates website/contact handling from MediaLatch-specific data flows and future product notices. The product page and OAuth privacy URL must point to that same policy. Preserve the exact owner-provided Google verification tag and HTML verification file.
 
-Keep the homepage and privacy policy on this site's domain, with a visible policy link. Change the policy whenever relevant extension behavior changes. Google Search Console verification is added only from the exact owner-provided record; no placeholder verification claim.
+Do not add analytics, third-party fonts, tracking pixels, account forms or scripts as visual decoration. Website publication does not change the extension, its license or a provider's verification decision.

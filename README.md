@@ -1,8 +1,9 @@
-# MediaLatch product website
+# NoizWorks website
 
-Public homepage and privacy policy for MediaLatch, maintained by NoizWorks.
+Organization homepage, separate MediaLatch product page and shared project-specific privacy policy, maintained by fs0x1337.
 
 - Website: https://noizworks.github.io/
+- MediaLatch: https://noizworks.github.io/medialatch/
 - Product: https://github.com/NoizWorks/MediaLatch
 - Privacy: https://noizworks.github.io/privacy.html
 - Contact: always1337@vk.com
@@ -10,6 +11,8 @@ Public homepage and privacy policy for MediaLatch, maintained by NoizWorks.
 GitHub Pages serves `main:/`. HTML, CSS and local SVG/PNG assets require no build step, JavaScript, external fonts or analytics. `site.css` is the active stylesheet; the historical `styles.css` is not loaded by the pages.
 
 Product information distinguishes published GitHub 3.0.7 features from the unshipped development build. Chrome Web Store availability is independent of GitHub releases.
+
+For MediaLatch OAuth branding, use the product homepage `/medialatch/` and the same shared `/privacy.html` linked there. The policy names MediaLatch and describes its specific behavior; future projects require their own disclosures before launch.
 
 The organization was renamed from MediaLatch to NoizWorks. The website repository retains its history and is now `NoizWorks/noizworks.github.io`. Earlier Pages hostnames are not automatic redirects.
 
