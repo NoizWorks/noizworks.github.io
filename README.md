@@ -1,12 +1,18 @@
-# MediaLatch product site
+# MediaLatch product website
 
-Static public homepage and privacy policy for MediaLatch. Published with GitHub Pages at https://xhthc.github.io/.
+Public homepage and privacy policy for MediaLatch, maintained by NoizWorks.
 
-- Product: https://github.com/xhthc/MediaLatch
-- Store: https://chromewebstore.google.com/detail/medialatch/cimghidldpjhhhngdhigddjfpcofhbmh
-- Privacy policy: https://xhthc.github.io/privacy.html
+- Website: https://noizworks.github.io/
+- Product: https://github.com/NoizWorks/MediaLatch
+- Privacy: https://noizworks.github.io/privacy.html
 - Contact: always1337@vk.com
 
-No JavaScript, analytics, remote fonts, package dependencies or build step. `main` is the Pages source; `.nojekyll` serves the files directly. The MediaLatch icon is the project's supplied artwork. This site does not change the extension's license or grant additional rights to the extension's code or assets.
+GitHub Pages serves `main:/`. HTML, CSS and local SVG/PNG assets require no build step, JavaScript, external fonts or analytics. `site.css` is the active stylesheet; the historical `styles.css` is not loaded by the pages.
 
-For Google Search Console, use a URL-prefix property for `https://xhthc.github.io/`. The owner-provided `google0b955c3eb3a38a37.html` is the public site-verification proof; preserve its exact contents and path after verification. Publishing this site alone does not complete OAuth brand verification.
+Product information distinguishes published GitHub 3.0.7 features from the unshipped development build. Chrome Web Store availability is independent of GitHub releases.
+
+The organization was renamed from MediaLatch to NoizWorks. The website repository retains its history and is now `NoizWorks/noizworks.github.io`. Earlier Pages hostnames are not automatic redirects.
+
+Preserve `google0b955c3eb3a38a37.html` and the exact owner-provided homepage verification meta tag. A new hostname requires its own Search Console verification and OAuth URL configuration; publishing the proof does not guarantee Google's acceptance of a shared hosting subdomain.
+
+The existing MediaLatch icon remains product artwork. `assets/save-flow.svg` adapts an owner-supplied diagram; `assets/corner.svg` is an owner-supplied decorative reference. This website does not change the extension's license or grant additional rights to its code or assets.
