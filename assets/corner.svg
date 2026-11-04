@@ -1,0 +1,25 @@
+<svg width="320" height="220" viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg" class="pointer-events-none select-none opacity-80">
+  <defs>
+    <radialGradient id="corner-glow" cx="100%" cy="0%" r="80%">
+      <stop offset="0%" stop-color="#e11d48" stop-opacity="0.28"/>
+      <stop offset="60%" stop-color="#881337" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ring-fade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Мягкий свет в углу -->
+  <rect width="320" height="220" fill="url(#corner-glow)"/>
+  
+  <!-- Концентрические техно-кольца -->
+  <circle cx="300" cy="20" r="70" stroke="url(#ring-fade)" stroke-width="1" stroke-dasharray="4 4"/>
+  <circle cx="300" cy="20" r="120" stroke="url(#ring-fade)" stroke-width="1"/>
+  <circle cx="300" cy="20" r="170" stroke="url(#ring-fade)" stroke-width="0.75" stroke-dasharray="12 6"/>
+  
+  <!-- Декоративные крестики сетки -->
+  <path d="M177 65H183M180 62V68" stroke="#f43f5e" stroke-opacity="0.4" stroke-width="1" stroke-linecap="round"/>
+  <path d="M237 135H243M240 132V138" stroke="#f43f5e" stroke-opacity="0.3" stroke-width="1" stroke-linecap="round"/>
+</svg>

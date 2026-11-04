@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="180" viewBox="0 0 500 180" fill="none">
+  <defs><linearGradient id="flow" x1="90" y1="0" x2="390" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#ff9bb4" stop-opacity=".3"/><stop offset=".5" stop-color="#ff9bb4"/><stop offset="1" stop-color="#ff9bb4" stop-opacity=".3"/></linearGradient></defs>
+  <g stroke="url(#flow)" stroke-width="2"><path d="M90 80H195"/><path d="M265 80C315 80 325 38 365 38"/><path d="M265 80C315 80 325 90 365 90"/><path d="M265 80C315 80 325 142 365 142"/></g>
+  <rect x="30" y="56" width="60" height="48" rx="10" fill="#1b1b24" stroke="#41414c"/><circle cx="60" cy="80" r="11" stroke="#b4b0bd" stroke-width="1.5"/><path d="M49 80H71M60 69C53 76 53 84 60 91C67 84 67 76 60 69Z" stroke="#b4b0bd"/>
+  <rect x="198" y="48" width="64" height="64" rx="16" fill="#c51b49" stroke="#ff9bb4" stroke-opacity=".5"/>
+  <path d="M216 90V70L230 81L244 70V90M230 79V95M230 95L224 89M230 95L236 89" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#1b1b24" stroke="#41414c"><rect x="365" y="18" width="125" height="40" rx="8"/><rect x="365" y="70" width="125" height="40" rx="8"/><rect x="365" y="122" width="125" height="40" rx="8"/></g>
+  <g fill="#f5f2f6" font-family="system-ui,sans-serif" font-size="12" text-anchor="middle"><text x="60" y="126">Selected media</text><text x="230" y="136">Your browser</text><text x="428" y="43">This computer</text><text x="428" y="95">Google Drive</text><text x="428" y="147">Yandex Disk</text></g>
+</svg>
