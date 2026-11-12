@@ -8,7 +8,7 @@ This repository serves the NoizWorks homepage, the MediaLatch product page and t
 - Privacy: https://noizworks.is-a.dev/privacy.html
 - Contact: always1337@vk.com
 
-GitHub Pages serves `main:/`. HTML, CSS and local SVG/PNG assets require no build step, JavaScript, external fonts or analytics. `site.css` is the active stylesheet; the historical `styles.css` is not loaded by the pages.
+GitHub Pages serves `main:/`. HTML, CSS and local SVG/PNG assets require no build step. Pages use Google Fonts for Space Grotesk, Inter and JetBrains Mono with system fallbacks; the site has no analytics. `site.css` is the active stylesheet; the historical `styles.css` is not loaded by the pages.
 
 Product information distinguishes published GitHub 3.0.7 features from the unshipped development build. Chrome Web Store availability is independent of GitHub releases.
 
