@@ -78,7 +78,7 @@ h3 { font-size: clamp(1.35rem, 1rem + 1.3vw, 2rem); }
 .support { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-items: start; gap: 58px; padding-block: 70px; }
 .support p { margin: 0; color: var(--muted); }
 .support-copy { display: grid; align-content: start; gap: 18px; }
-.telegram-contact { margin: 0 0 20px; color: var(--muted); }
+.telegram-contact { color: var(--muted); }
 .telegram-contact a { display: inline-flex; align-items: center; gap: 6px; vertical-align: middle; white-space: nowrap; }
 .telegram-contact .icon { color: #9fc4ff; }
 .support-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; list-style: none; margin: 0; padding: 0; }
