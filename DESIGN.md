@@ -1,6 +1,6 @@
 # NoizWorks website design
 
-The root page presents NoizWorks as an independent multi-project organization. MediaLatch has its own page at `/medialatch/`, with its recognizable icon, concrete workflow and an explicit distinction between release 3.0.7 and development features. Do not invent additional projects or availability dates.
+The root page presents NoizWorks as an independent multi-project organization. MediaLatch has its own page at `/medialatch/`, with its recognizable icon, concrete workflow and an explicit distinction between the Store version and features in testing. Do not invent additional projects or availability dates.
 
 Use the generated NW mark for organization identity and the existing MediaLatch mark only for the product. Use the shared `site.css`: a dark background, restrained warm accents, approved Google Fonts with system fallbacks, readable line lengths and visible keyboard focus. No framework or build step is required.
 
