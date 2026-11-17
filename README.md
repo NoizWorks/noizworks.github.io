@@ -19,3 +19,5 @@ GitHub Pages uses `noizworks.is-a.dev` as its custom domain. The repository is `
 Preserve `google0b955c3eb3a38a37.html` and the exact owner-provided homepage verification meta tag. Google Search Console confirmed `noizworks.is-a.dev` through DNS. MediaLatch uses that hostname for its homepage and privacy policy in Google Auth Platform. Google reviews OAuth branding separately.
 
 The existing MediaLatch icon remains product artwork. `assets/save-flow.svg` adapts an owner-supplied diagram; `assets/corner.svg` is an owner-supplied decorative reference. This website does not change the extension's license or grant additional rights to its code or assets.
+
+Interface icons are bundled in `assets/ui-icons.svg`, with the Lucide license in `assets/ICONS-LICENSE.txt`. The site uses the existing NoizWorks and MediaLatch brand assets.
