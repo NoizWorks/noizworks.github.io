@@ -189,3 +189,6 @@ code { font-family: var(--mono); font-size: .9em; overflow-wrap: anywhere; }
   .button, .project-card, .product-shot img, .development, .summary-card, .policy-contents { border: 1px solid CanvasText; box-shadow: none; }
   .support-link, .support-icon, .feature-icon { border: 1px solid CanvasText; background: Canvas; box-shadow: none; color: CanvasText; }
 }
+
+.extension-id { display: inline-block; max-width: 100%; overflow-wrap: anywhere; user-select: all; color: var(--ink); }
+.language-link { font-weight: 700; }
