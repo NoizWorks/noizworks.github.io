@@ -3,8 +3,8 @@
   "name": "MediaLatch",
   "start_url": "/medialatch/",
   "icons": [
-    { "src": "favicon.svg?v=3.1.1", "sizes": "any", "type": "image/svg+xml" },
-    { "src": "../assets/medialatch.png?v=3.1.1", "sizes": "128x128", "type": "image/png" },
-    { "src": "apple-touch-icon.png?v=3.1.1", "sizes": "180x180", "type": "image/png" }
+    { "src": "favicon.svg?v=3.1.2", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "../assets/medialatch.png?v=3.1.2", "sizes": "128x128", "type": "image/png" },
+    { "src": "apple-touch-icon.png?v=3.1.2", "sizes": "180x180", "type": "image/png" }
   ]
 }
