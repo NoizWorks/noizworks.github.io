@@ -314,7 +314,6 @@ h3 { font-size: clamp(1.35rem, 1rem + 1.3vw, 2rem); }
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  transform: rotateY(-11deg) rotateX(3.5deg);
 }
 .graphite-window {
   position: absolute;
@@ -341,13 +340,14 @@ h3 { font-size: clamp(1.35rem, 1rem + 1.3vw, 2rem); }
 }
 .graphite-window[data-pos="0"] {
   z-index: 4;
-  transform: translate3d(0, 0, 0) scale(1);
+  transform: translate3d(0, 0, 0);
   opacity: 1;
   pointer-events: auto;
+  will-change: auto;
 }
 .graphite-window[data-pos="1"] {
   z-index: 3;
-  transform: translate3d(26px, -20px, -45px) scale(0.94);
+  transform: translate3d(28px, -20px, -45px) rotateY(-9deg) rotateX(3deg) scale(0.94);
   opacity: 0.46;
   border-color: rgba(255, 255, 255, 0.22);
   pointer-events: auto;
@@ -355,14 +355,14 @@ h3 { font-size: clamp(1.35rem, 1rem + 1.3vw, 2rem); }
 }
 .graphite-window[data-pos="2"] {
   z-index: 2;
-  transform: translate3d(48px, -38px, -90px) scale(0.88);
+  transform: translate3d(52px, -38px, -90px) rotateY(-12deg) rotateX(4deg) scale(0.88);
   opacity: 0.20;
   border-color: rgba(255, 255, 255, 0.20);
   pointer-events: none;
 }
 .graphite-window[data-pos="3"] {
   z-index: 1;
-  transform: translate3d(68px, -54px, -130px) scale(0.82);
+  transform: translate3d(72px, -54px, -130px) rotateY(-14deg) rotateX(4.5deg) scale(0.82);
   opacity: 0;
   pointer-events: none;
 }
@@ -557,11 +557,10 @@ code { font-family: var(--mono); font-size: .9em; overflow-wrap: anywhere; }
   .graphite-footer-row { flex-wrap: nowrap; gap: 8px; }
   .graphite-kicker { font-size: 0.67rem; letter-spacing: 0.10em; }
   .graphite-stage-wrap { padding: 28px 30px 8px 2px; }
-  .graphite-deck { transform: rotateY(-6deg) rotateX(2deg); }
   .graphite-window { border-radius: 11px; }
-  .graphite-window[data-pos="1"] { transform: translate3d(14px, -12px, -30px) scale(0.95); }
-  .graphite-window[data-pos="2"] { transform: translate3d(26px, -22px, -60px) scale(0.90); }
-  .graphite-window[data-pos="3"] { transform: translate3d(36px, -30px, -90px) scale(0.85); }
+  .graphite-window[data-pos="1"] { transform: translate3d(14px, -12px, -30px) rotateY(-5deg) rotateX(2deg) scale(0.95); }
+  .graphite-window[data-pos="2"] { transform: translate3d(26px, -22px, -60px) rotateY(-7deg) rotateX(2.5deg) scale(0.90); }
+  .graphite-window[data-pos="3"] { transform: translate3d(36px, -30px, -90px) rotateY(-9deg) rotateX(3deg) scale(0.85); }
   .support-links, .summary-grid, .feature-list > div { grid-template-columns: minmax(0, 1fr); }
   .feature-list > div { gap: 5px; }
   .development { padding: 24px; }
