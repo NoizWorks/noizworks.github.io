@@ -2,6 +2,8 @@
   const hero = document.querySelector('[data-graphite-hero]');
   if (!hero) return;
 
+  const deck = hero.querySelector('.graphite-deck');
+  const tablist = hero.querySelector('[role="tablist"]');
   const tabs = Array.from(hero.querySelectorAll('[role="tab"]'));
   const panels = Array.from(hero.querySelectorAll('[role="tabpanel"]'));
   const pauseBtn = hero.querySelector('[data-hero-pause]');
@@ -93,7 +95,7 @@
         themeIndex = (themeIndex + 1) % THEMES.length;
       }
       render(active + 1);
-    }, 3200);
+    }, 4000);
     dotTimer = window.setInterval(() => {
       applyThemeAccent(themeIndex + 1);
     }, 2400);
@@ -142,14 +144,35 @@
     });
   }
 
-  hero.addEventListener('pointerenter', () => { hovered = true; stopTimers(); });
-  hero.addEventListener('pointerleave', () => { hovered = false; startTimers(); });
-  hero.addEventListener('focusin', () => { focused = true; stopTimers(); });
-  hero.addEventListener('focusout', (e) => {
-    if (!hero.contains(e.relatedTarget)) {
-      focused = false;
-      startTimers();
-    }
+  // Scope hover and keyboard-focus pause strictly to interactive showcase controls
+  const interactiveTargets = [deck, tablist].filter(Boolean);
+  const hoveredTargets = new Set();
+  interactiveTargets.forEach((el) => {
+    el.addEventListener('pointerenter', (e) => {
+      if (e.pointerType === 'touch') return;
+      hoveredTargets.add(el);
+      hovered = true;
+      stopTimers();
+    });
+    el.addEventListener('pointerleave', (e) => {
+      if (e.pointerType === 'touch') return;
+      hoveredTargets.delete(el);
+      hovered = hoveredTargets.size > 0;
+      if (!hovered) startTimers();
+    });
+    el.addEventListener('focusin', (e) => {
+      if (e.target && typeof e.target.matches === 'function' && e.target.matches(':focus-visible')) {
+        focused = true;
+        stopTimers();
+      }
+    });
+    el.addEventListener('focusout', (e) => {
+      const stillFocused = interactiveTargets.some((target) => target.contains(e.relatedTarget));
+      if (!stillFocused) {
+        focused = false;
+        startTimers();
+      }
+    });
   });
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) stopTimers();
