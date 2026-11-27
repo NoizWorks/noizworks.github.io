@@ -198,6 +198,12 @@ h3 { font-size: clamp(1.35rem, 1rem + 1.3vw, 2rem); }
 .graphite-actions .text-link:hover {
   color: #f8fafc;
 }
+.graphite-trust {
+  margin: 12px 0 0;
+  color: #8c97a8;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+}
 .graphite-pills-wrap {
   width: 100%;
   margin-top: 26px;
