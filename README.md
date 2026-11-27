@@ -10,7 +10,7 @@ This repository serves the NoizWorks homepage, the MediaLatch product page and t
 
 GitHub Pages serves `main:/`. HTML, CSS and local SVG/PNG assets require no build step. Pages use Google Fonts for Space Grotesk, Inter and JetBrains Mono with system fallbacks; the site has no analytics. `site.css` is the active stylesheet; the historical `styles.css` is not loaded by the pages.
 
-Product information reflects MediaLatch 3.2.0. Chrome Web Store lists the version currently available to install, and GitHub Releases publishes the release notes.
+Product information reflects MediaLatch 3.2.1. Chrome Web Store lists the version currently available to install, and GitHub Releases publishes the release notes.
 
 For MediaLatch OAuth branding, use the product homepage `/medialatch/` and the same shared `/privacy.html` linked there. The policy names MediaLatch and describes its specific behavior; future projects require their own disclosures before launch.
 
